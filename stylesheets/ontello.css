@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: '-ontello';
-  src: url("../font/-ontello.eot");
-  src: url("../font/-ontello.eot?#iefix") format('embedded-opentype'), url("../font/-ontello.woff") format('woff'), url("../font/-ontello.ttf") format('truetype'), url("../font/-ontello.svg#-ontello") format('svg');
+  src: url("http://pixeldizajn.com/PerfectCV/font/-ontello.eot");
+  src: url("http://pixeldizajn.com/PerfectCV/font/-ontello.eot?#iefix") format('embedded-opentype'), url("../font/-ontello.woff") format('woff'), url("../font/-ontello.ttf") format('truetype'), url("../font/-ontello.svg#-ontello") format('svg');
   font-weight: normal;
   font-style: normal;
 }
