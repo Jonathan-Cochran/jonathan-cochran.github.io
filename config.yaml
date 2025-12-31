@@ -55,7 +55,8 @@ markup:
 params:
   title: "Jonathan Cochran"
   description: From the mind of a digital introvert - where introspection fuels innovation.
-  # staticPath: "/static"  # The path to serve the static files from
+  staticPath: "" # The path to serve the static files from
+  customCSS: true
   favicon: "/fav.png"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
@@ -149,15 +150,18 @@ params:
     title: "About Me"
     image: "/images/me.png"
     content: |-
-      I'm a seasoned technology leader rooted in Columbus, OH, currently spearheading innovation at Cardinal Health. With a solid foundation in computer science and mathematics, I thrive at the crossroads of technology and groundbreaking innovation. My current endeavor involves a pioneering project aimed at revolutionizing patient care—enabling hospital-level care in the comfort of one's home, a testament to my commitment to driving industry disruptions.
+      I’m a technology and innovation leader based in Columbus, OH, currently working at Nationwide Insurance, where I focus on solving real problems for insurance agents through thoughtful application of technology, AI, and design thinking. My work lives at the intersection of human needs and technical possibility—helping translate messy, real-world challenges into practical, scalable solutions.
 
-      My expertise spans across AI, Vision Technology, Design Thinking, lean methodologies, and agile practices. My fervor isn't just limited to technology. I love the outdoors, spending time with my family, and I'm equally passionate about running. Well, "passionate" might be a strong word. Let's just say I run... occasionally.
+      With a background in computer science and mathematics, I’ve spent my career operating where strategy meets execution: building, guiding, and refining initiatives that blend AI, design thinking, lean principles, and agile delivery. I’m particularly interested in how emerging technologies can reduce friction, amplify human judgment, and create better experiences—not just shinier tools.
+
+      Outside of work, I enjoy time with my family, being outdoors, and running. “Enjoy” might be generous. I do run.
     skills:
       enable: true
       title: "Here are a few practices I've been focusing on recently:"
       items:
         - "Design Thinking"
-        - "HTML"
+        - "AI agents"
+        - "Human-centered design"
         - "CSS"
         - "JavaScript"
         - "React"
@@ -166,25 +170,41 @@ params:
         - "GPT API"
         - "Wasp-lang"
         - "geospatial data"
+        - "Prompt engineering"
+        - "HTML"
+        - "Systems thinking"
+        - "Prototyping"
 
   # Experience
   experience:
     enable: true
     # title: "Custom Name"
     items:
+      - job: "Director, Technology Innovation Consultant Leader"
+        company: "Nationwide Insurance"
+        companyUrl: "https://nationwide.com"
+        date: "May 2025 - present"
+        featuredLink:
+          enable: false
+        info:
+          enable: true
+          content: Leading innovation for agents and internal sales teams.
+        content: |
+          Focused on agents and internal sales teams, partnering with the business to solve user problems and translate ideas into actionable work for technology teams.
+
       - job: "Senior Innovation Consultant"
         company: "Cardinal Health"
         companyUrl: "https://cardinalhealth.com"
-        date: "Jan 2021 - present"
+        date: "Jan 2021 - May 2025"
         featuredLink:
           enable: true
           name: "Velocare"
           url: "https://newsroom.cardinalhealth.com/2022-11-15-Cardinal-Health-brings-hospital-level-care-to-the-home-with-new-supply-chain-solution"
         info:
           enable: true
-          content: Currently working as an Innvation Consultant
+          content: Worked as an Innovation Consultant.
         content: |
-          At present, I am deeply involved in an innovative project that is reshaping patient care by offering hospital-grade services right at home, underscoring my dedication to shaking up the industry norms.
+          I was deeply involved in an innovative project that reshaped patient care by offering hospital-grade services right at home, underscoring my dedication to shaking up industry norms.
 
           Key Achievements:
           - New Business Creation
@@ -281,6 +301,20 @@ params:
     enable: true
     # title: "Custom Name"
     items:
+      - title: PIE Path
+        content: PIE Path helps professionals advance their careers by mastering Performance, Image, and Exposure through goal tracking, personal brand development, and network mapping.
+        image: /images/projects/PiePath.png
+        featured:
+          name: PIE Path
+          link: https://pie-path.com/
+
+      - title: Witnessed
+        content: Witnessed helps college football fans chronicle the games they’ve attended and watched — building a living record of rivalries, road trips, and unforgettable moments. Track your matchups, see your fan stats grow, and relive the seasons that shaped your story. We’re currently in private beta — join the waitlist to get early access.
+        image: /images/projects/WitnessedApp.png
+        featured:
+          name: Witnessed
+          link: https://witnessed.app/
+
       - title: Hugo Profile Site
         content: Leverage Hugo and GitHub pages for my personal portfolio. Also utilize GitHub actions to auto deploy.
         image: /images/projects/PortfolioScreen.PNG

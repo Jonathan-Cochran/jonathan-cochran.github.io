@@ -1,0 +1,16 @@
+/* Custom overrides for the local site; loaded after theme styles. */
+#about ul {
+    grid-template-columns: repeat(3, minmax(180px, 240px)) !important;
+}
+
+@media (max-width: 992px) {
+    #about ul {
+        grid-template-columns: repeat(2, minmax(180px, 240px)) !important;
+    }
+}
+
+@media (max-width: 576px) {
+    #about ul {
+        grid-template-columns: 1fr !important;
+    }
+}
