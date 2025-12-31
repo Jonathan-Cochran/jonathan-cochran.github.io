@@ -10,6 +10,7 @@ read_when:
 - `public/` is generated output; do not hand-edit it.
 - Assets live in `static/` and are referenced with `/`-prefixed paths.
 - The theme is a git submodule at `themes/hugo-profile`; avoid vendor edits unless necessary.
+- The experience gallery uses a local override at `layouts/partials/sections/experience.html` plus `static/js/experience-gallery.js`.
 
 ## Quick Orientation
 - Content updates: edit `config.yaml`, update assets in `static/`.

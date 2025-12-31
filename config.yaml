@@ -57,6 +57,8 @@ params:
   description: From the mind of a digital introvert - where introspection fuels innovation.
   staticPath: "" # The path to serve the static files from
   customCSS: true
+  customScripts: |
+    <script src="/js/experience-gallery.js"></script>
   favicon: "/fav.png"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
@@ -180,31 +182,16 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - job: "Director, Technology Innovation Consultant Leader"
-        company: "Nationwide Insurance"
-        companyUrl: "https://nationwide.com"
-        date: "May 2025 - present"
-        featuredLink:
-          enable: false
-        info:
-          enable: true
-          content: Leading innovation for agents and internal sales teams.
+      - job: "Back to Nationwide Insurance"
+        date: "2025"
         content: |
-          Focused on agents and internal sales teams, partnering with the business to solve user problems and translate ideas into actionable work for technology teams.
+          Started back at Nationwide as a Director, Technology Innovation Consultant Leader focused on helping drive innovation by solving user, customer, and agent needs.
 
       - job: "Senior Innovation Consultant"
-        company: "Cardinal Health"
-        companyUrl: "https://cardinalhealth.com"
-        date: "Jan 2021 - May 2025"
-        featuredLink:
-          enable: true
-          name: "Velocare"
-          url: "https://newsroom.cardinalhealth.com/2022-11-15-Cardinal-Health-brings-hospital-level-care-to-the-home-with-new-supply-chain-solution"
-        info:
-          enable: true
-          content: Worked as an Innovation Consultant.
+        date: "2021 - 2025"
+        image: /images/experience/2021-cah.png
         content: |
-          I was deeply involved in an innovative project that reshaped patient care by offering hospital-grade services right at home, underscoring my dedication to shaking up industry norms.
+          I was deeply involved in an innovative project that is reshaping patient care by offering hospital-grade services right at home, underscoring my dedication to shaking up industry norms.
 
           Key Achievements:
           - New Business Creation
@@ -213,51 +200,31 @@ params:
           - Innovation Award Winner for Vision as a Capability
 
       - job: "Director, Application Owner"
-        company: "NetJets"
-        companyUrl: "https://netjets.com"
-        date: "Jul 2019 - Jan 2022"
-        featuredLink:
-          enable: true
-          name: "Net Jets Mobile Application"
-          url: "https://www.netjets.com/en-us/netjets-app-book-private-flights"
-        info:
-          enable: true
-          content: I worked as a Director of Technology my entire time at NetJets.
+        date: "2019 - 2021"
+        image: /images/experience/2020-nj.png
         content: |
-          Oversaw IT application teams aligned with Marketing, Sales, and Owner Services business Units. Committed to deliver exceptional digital experiences in tandem with achieving business goals.
+          Oversaw IT application teams aligned with Marketing, Sales, and Owner Services business units. Committed to delivering exceptional digital experiences in tandem with achieving business goals.
 
           Key Achievements:
-          - Mobile App Enhancment
-          - Webiste Overhaul
+          - Mobile App Enhancement
+          - Website Overhaul
           - Contract Management Modernization
           - Team Engagement
 
       - job: "Digital Application Owner"
-        company: "Bread Financial"
-        companyUrl: "https://www.breadfinancial.com/"
-        date: "Oct 2017 - Jul 2019"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
-        info:
-          enable: true
-          content: Responsible multiple teams responsible for digitial experiences.
+        date: "2017 - 2019"
+        image: /images/experience/2018-ads.png
         content: |
           Championed the delivery of outstanding digital experiences, ensuring alignment with overarching business objectives.
 
           Key Achievements:
           - Web Application Revamp
           - Hackathon Leadership
-          - Team Engagment
+          - Team Engagement
 
       - job: "Application Suite Owner"
-        company: "Nationwide Insurance"
-        companyUrl: "https://nationwide.com"
-        date: "Jun 2010 - Oct 2017"
-        featuredLink:
-          enable: true
-          name: "Auto / Property / Renters / Motorcycle Quote & Bind"
-          url: "https://multiproduct.nationwide.com/multi-quote/getting-started"
+        date: "2008 - 2017"
+        image: /images/experience/2010-nw.png
         content: |
           Steered multiple onshore and offshore teams using agile methodologies to cater to both production support and project demands. Served as the IT Development Executive (ITDE) for multiple new online products, while also taking on the role of IT Development Lead for the company's primary Internet program.
 
@@ -269,6 +236,38 @@ params:
           - Finalist for IT Outstanding Contribution Award
           - Associate Choice award winner
           - Presented on Agile Leadership at TechCon
+
+      - job: "Buckeyes For A Cure"
+        date: "2007 - 2014"
+        image: /images/experience/2008-bfac.png
+        content: |
+          Created a web application to support the nonprofit I helped co-found. The app would allow people to purchase a buckeye to be part of the world's largest buckeye necklace. Users could then see a picture of their actual numbered buckeye.
+
+      - job: "Application Owner"
+        date: "2005 - 2008"
+        image: /images/experience/2005-nw.png
+        content: |
+          Started off as a Sr. dev at Nationwide. Moved into an Application Enhancement Coordinator and then an Application Owner role. Drove new agile and Kaizen processes across the area. Responsible for our Automated Loss Prevention application.
+
+      - job: "Got married to my wife Alison"
+        date: "2004"
+        image: /images/experience/2004-marriage.png
+
+      - job: "Sr Dev at Modis and Progressive Medical"
+        date: "2002 - 2005"
+        image: /images/experience/2002-progressive.png
+        content: |
+          Created our company internet site and internal portal for pharmacies.
+
+      - job: "BGSU"
+        date: "2000"
+        image: /images/experience/2000-bgsu.png
+        content: |
+          Met my future wife at BGSU and graduated with a Computer Science degree in 2000.
+
+          Extracurricular Activities:
+          - ACM Member
+          - Club Water Polo
 
 
   # Achievements
@@ -368,7 +367,7 @@ params:
 
   # Education
   education:
-    enable: true
+    enable: false
     # title: "Custom Name"
     index: false
     items:

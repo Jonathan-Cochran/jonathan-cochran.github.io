@@ -1,0 +1,89 @@
+{{ if .Site.Params.experience.enable | default false }}
+<section id="experience" class="experience-gallery py-5">
+    <div class="container">
+        <h3 class="text-center">{{ .Site.Params.experience.title | default "Experience" }}</h3>
+    </div>
+    <div class="experience-gallery__frame">
+        <div class="experience-gallery__rail">
+            <span class="experience-gallery__year-pill" aria-live="polite"></span>
+            <div class="experience-gallery__dots" role="tablist" aria-label="Experience timeline">
+                {{ range $index, $element := .Site.Params.experience.items }}
+                <button
+                    class="experience-gallery__dot"
+                    type="button"
+                    data-index="{{ $index }}"
+                    aria-label="{{ .date }}"
+                ></button>
+                {{ end }}
+            </div>
+        </div>
+        <div class="experience-gallery__viewport">
+            <div class="experience-gallery__track">
+                {{ range $index, $element := .Site.Params.experience.items }}
+                {{ $yearMatches := findRE "[0-9]{4}" (.date | default "") }}
+                {{ $year := cond (gt (len $yearMatches) 0) (index $yearMatches 0) "" }}
+                <article
+                    class="experience-gallery__slide"
+                    data-index="{{ $index }}"
+                    data-year="{{ $year }}"
+                    data-year-label="{{ $year | default (.date | default "") }}"
+                    aria-hidden="{{ if (eq $index 0) }}false{{ else }}true{{ end }}"
+                >
+                    <div class="experience-gallery__bg-year">{{ $year }}</div>
+                    <div class="experience-gallery__content">
+                        <div class="experience-gallery__text">
+                            {{ if .date }}
+                            <div class="experience-gallery__date">{{ .date }}</div>
+                            {{ end }}
+                            {{ if .job }}
+                            <h4 class="experience-gallery__role">{{ .job }}</h4>
+                            {{ end }}
+                            {{ if .company }}
+                                {{ if .companyUrl }}
+                                <a class="experience-gallery__company" href="{{ .companyUrl }}" target="_blank" rel="noreferrer">{{ .company }}</a>
+                                {{ else }}
+                                <div class="experience-gallery__company">{{ .company }}</div>
+                                {{ end }}
+                            {{ end }}
+                            {{ if .info.enable | default false }}
+                            <div class="experience-gallery__meta">{{ .info.content }}</div>
+                            {{ end }}
+                            {{ if .content }}
+                            <div class="experience-gallery__desc">{{ .content | markdownify }}</div>
+                            {{ end }}
+                            {{ if .featuredLink.enable | default false }}
+                            <div class="experience-gallery__cta">
+                                <a class="btn btn-outline-primary btn-sm" href="{{ .featuredLink.url | default "#" }}" target="_blank" rel="noreferrer">
+                                    {{ .featuredLink.name | default "Featured Link" }}
+                                </a>
+                            </div>
+                            {{ end }}
+                        </div>
+                        <div class="experience-gallery__image-wrap">
+                            {{ if .image }}
+                            <img class="experience-gallery__image" src="{{ .image }}" alt="{{ .company }}">
+                            {{ else }}
+                            <div class="experience-gallery__image-placeholder">{{ $year }}</div>
+                            {{ end }}
+                        </div>
+                    </div>
+                </article>
+                {{ end }}
+            </div>
+        </div>
+        <div class="experience-gallery__controls" aria-label="Experience navigation">
+            <button class="experience-gallery__control" type="button" data-action="prev" aria-label="Previous">
+                <span aria-hidden="true">&#x2039;</span>
+            </button>
+            <div class="experience-gallery__progress" aria-hidden="true">
+                {{ range $index, $element := .Site.Params.experience.items }}
+                <span class="experience-gallery__progress-step"></span>
+                {{ end }}
+            </div>
+            <button class="experience-gallery__control" type="button" data-action="next" aria-label="Next">
+                <span aria-hidden="true">&#x203A;</span>
+            </button>
+        </div>
+    </div>
+</section>
+{{ end }}
