@@ -15,9 +15,28 @@
     }
 }
 
+/* Hero stat line */
+#hero .hero-stat {
+    margin: 0.5rem 0 1rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--text-secondary-color);
+}
+
 /* Experience gallery */
 .experience-gallery {
     position: relative;
+    isolation: isolate;
+}
+
+.experience-gallery::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, rgba(140, 118, 96, 0.18), rgba(24, 25, 26, 0) 65%);
+    opacity: 0.8;
+    z-index: -1;
 }
 
 .experience-gallery__frame {

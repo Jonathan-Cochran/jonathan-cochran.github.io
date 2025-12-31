@@ -17,6 +17,7 @@ A Hugo-based personal portfolio site using the `hugo-profile` theme. Content is 
 - `public/`: generated output from Hugo builds (do not hand-edit).
 - `.github/workflows/deploy_gh_pages.yaml`: GitHub Pages deployment workflow.
 - `notes/`: non-source artifacts or backups that should not be treated as active config.
+- `layouts/partials/sections/hero/index.html`: local override for the hero section.
 - `layouts/partials/sections/experience.html`: local override for the experience section.
 - `static/style.css`: custom CSS overrides loaded after the theme.
 - `static/js/experience-gallery.js`: experience gallery behavior.

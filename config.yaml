@@ -122,7 +122,8 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "Jonathan."
-    subtitle: "I believe in the power of user empathy; by deeply understanding user needs, we can craft the next wave of innovative solutions." #"Delving into the innovative history of a digital introvert."
+    subtitle: "I turn user empathy into human-centered innovation." #"Delving into the innovative history of a digital introvert."
+    stat: "20+ years leading human-centered digital experiences"
 #    content: "A passionate innovator. I believe in the power of user empathy to transform businesses; by deeply understanding their needs, we can craft the next wave of innovative solutions."
     image: /images/hero.jpg
     bottomImage:
@@ -157,9 +158,13 @@ params:
       With a background in computer science and mathematics, I’ve spent my career operating where strategy meets execution: building, guiding, and refining initiatives that blend AI, design thinking, lean principles, and agile delivery. I’m particularly interested in how emerging technologies can reduce friction, amplify human judgment, and create better experiences—not just shinier tools.
 
       Outside of work, I enjoy time with my family, being outdoors, and running. “Enjoy” might be generous. I do run.
+
+      **Principles I Lead With:**
+      - Career Development: Demonstrate a commitment to each team member's growth, not just project objectives.
+      - Transparency with Stakeholders: Maintain open communication and proactively share updates to remove surprises.
     skills:
       enable: true
-      title: "Here are a few practices I've been focusing on recently:"
+      title: "Recent Focus Areas:"
       items:
         - "Design Thinking"
         - "AI agents"
@@ -187,7 +192,7 @@ params:
         content: |
           Started back at Nationwide as a Director, Technology Innovation Consultant Leader focused on helping drive innovation by solving user, customer, and agent needs.
 
-      - job: "Senior Innovation Consultant"
+      - job: "Senior Innovation Consultant at Cardinal Health"
         date: "2021 - 2025"
         image: /images/experience/2021-cah.png
         content: |
@@ -199,7 +204,7 @@ params:
           - Design Thinking Workshop
           - Innovation Award Winner for Vision as a Capability
 
-      - job: "Director, Application Owner"
+      - job: "Director, Application Owner at NetJets"
         date: "2019 - 2021"
         image: /images/experience/2020-nj.png
         content: |
@@ -211,7 +216,7 @@ params:
           - Contract Management Modernization
           - Team Engagement
 
-      - job: "Digital Application Owner"
+      - job: "Digital Application Owner at Bread Financial (Alliance Data)"
         date: "2017 - 2019"
         image: /images/experience/2018-ads.png
         content: |
@@ -222,7 +227,7 @@ params:
           - Hackathon Leadership
           - Team Engagement
 
-      - job: "Application Suite Owner"
+      - job: "Application Suite Owner at Nationwide Insurance"
         date: "2008 - 2017"
         image: /images/experience/2010-nw.png
         content: |
@@ -243,7 +248,7 @@ params:
         content: |
           Created a web application to support the nonprofit I helped co-found. The app would allow people to purchase a buckeye to be part of the world's largest buckeye necklace. Users could then see a picture of their actual numbered buckeye.
 
-      - job: "Application Owner"
+      - job: "Application Owner at Nationwide Insurance"
         date: "2005 - 2008"
         image: /images/experience/2005-nw.png
         content: |

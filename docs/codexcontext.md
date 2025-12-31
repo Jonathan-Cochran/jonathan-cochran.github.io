@@ -11,6 +11,7 @@ read_when:
 - Assets live in `static/` and are referenced with `/`-prefixed paths.
 - The theme is a git submodule at `themes/hugo-profile`; avoid vendor edits unless necessary.
 - The experience gallery uses a local override at `layouts/partials/sections/experience.html` plus `static/js/experience-gallery.js`.
+- The hero section is overridden locally at `layouts/partials/sections/hero/index.html`.
 
 ## Quick Orientation
 - Content updates: edit `config.yaml`, update assets in `static/`.
