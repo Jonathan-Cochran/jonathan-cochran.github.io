@@ -139,13 +139,11 @@ params:
       fontAwesomeIcons:
         - icon: fab fa-github
           url: https://github.com/Jonathan-Cochran/
-        - icon: fab fa-twitter
-          url: https://twitter.com/JonathanCochran
         - icon: fab fa-linkedin
           url: https://www.linkedin.com/in/jonathancochran77/
-#      customIcons:
-#        - icon: /fav.png
-#          url: "https://example.com"
+      customIcons:
+        - icon: /icons/x.svg
+          url: https://twitter.com/JonathanCochran
 
   # About
   about:
